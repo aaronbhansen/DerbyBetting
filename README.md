@@ -8,4 +8,4 @@ This was done as a simple web application experiement to see if it was possible 
 
 ## Getting Started
 
-Ensure you have Jekyll[http://jekyllrb.com/] installed, then run 'jekyll build' in the base directory. Next run the site and follow the on screen directions. Only races that are in the future will successfully work for betting (past races only have a summary of information available), but the rest of the application can be accessed/modified at anytime.
+Ensure you have [Jekyll](http://jekyllrb.com/) installed, then run 'jekyll build' in the base directory. Next run the site and follow the on screen directions. Only races that are in the future will successfully work for betting (past races only have a summary of information available), but the rest of the application can be accessed/modified at anytime.
