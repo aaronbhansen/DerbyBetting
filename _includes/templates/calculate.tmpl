@@ -1,0 +1,19 @@
+{% raw %}
+<script id="calculate-template" type="text/x-jquery-tmpl">
+<tr>
+    <td>${name}</td>
+    <td>
+{{if finished}}
+        Finished
+{{else selected}}
+        Current
+{{/if}}
+    </td>
+    <td>
+        {{if finished}}
+        <button name="calculate" data-id="${id}" class="btn{{if !calculated}}-primary{{/if}}">Calculate</button>
+        {{/if}}
+    </td>
+</tr>
+</script>
+{% endraw %}

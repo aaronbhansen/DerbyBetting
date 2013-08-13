@@ -1,0 +1,35 @@
+<div id="application-setup">
+  <h1>Application Setup</h1>
+  <div class="row">
+    <form id="toteboard-data" class="well form-inline">
+      <div class="control-group">
+        <label class="control-label" for="data-url">1. Set Toteboard Results Url:</label>
+        <div class="controls">
+          <input type="text" class="input-xlarge" name="data-url" value="http://www.churchilldowns.com/racing-wagering">
+          <button type="button" class="btn">Save URL and Refresh Race Dates</button>
+        </div>
+      </div>
+    </form>
+    <form id="toteboard-dates" class="well form-inline">
+      <div class="control-group">
+        <label class="control-label" for="race-dates">2. Set Current Race Date:</label>
+        <div class="controls">
+          <select name="race-dates">
+          </select>
+          <button type="button" class="btn">Set as Current Race Date</button>
+        </div>
+        <span>(If you pick a date that isn't today, the site won't function correctly, because the information isn't available to read)</span>
+      </div>
+    </form>
+    <form id="date-races" class="well form-inline"> 
+      <div class="control-group">
+        <label class="control-label" for="race-dates">3. Races on date:</label>
+        <div class="controls">
+          <select name="races">
+          </select>
+          <button type="button" class="btn">Refresh Races for Date</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{% raw %}
+<script id="player-template" type="text/x-jquery-tmpl">
+  <td>${name}</td>
+  <td>$${FormatNumber(funds)}</td>
+  <td>
+  {{if totalBet < 0}}
+    -$${FormatNumber(totalBet) * -1}
+  {{else}}
+    $${FormatNumber(totalBet)}
+  {{/if}}
+  </td>
+  <td>$${FormatNumber(totalWon)}</td>
+  <td>${FormatNumber(roi)}%</td>
+  <td>$${FormatNumber(lastBetWinnings)}</td>
+  <td>
+    <button type="button" data-action="select" class="btn btn">Select Player</button>
+  </td>
+</script>
+{% endraw %}

@@ -1,0 +1,33 @@
+{% raw %}
+<script id="horse-template" type="text/x-jquery-tmpl">
+  <td style="display: none;"><input type="hidden" name="horse_id" value="${id}" /></td>
+  <td class="${style}"><h3>${number}</h3></td>
+  <td class="name">${name}</td>
+  <td>${morningOdds}</td>
+  <td class="odds">${currentOdds}</td>
+  <td>${jockey}</td>
+  <td>${jockeyWeight}</td>
+  <td>${trainer}</td>
+  <td class="bet" data-action="to-win">
+    {{if finished && !scratched}}
+      Race Over
+    {{else !scratched}}
+      <input type="text" class="input-small" name="to-win" placeholder="$ Bet" data-type="funds"/>
+    {{else}}
+      Out of Race
+    {{/if}}
+  </td>
+  <td class="bet" data-action="to-place">
+    {{if !scratched && !finished}}
+      <input type="text" class="input-small" name="to-place" placeholder="$ Bet" data-type="funds"/>
+    {{/if}}
+  </td>
+  <td class="bet" data-action="to-show">
+    {{if !scratched && !finished}}
+      <input type="text" class="input-small" name="to-show" placeholder="$ Bet" data-type="funds"/>
+    {{/if}}
+  </td>
+  <td>$<span data-type="bet-cost">0</span></td>
+  <td>$<span data-type="estimated-winning">0</span></td>
+</script>
+{% endraw %}

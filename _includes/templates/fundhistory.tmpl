@@ -1,0 +1,24 @@
+{% raw %}
+<script id="fund-template" type="text/x-jquery-tmpl">
+  <tr>
+    <td>${FormatDate(date)}</td>
+    <td>${FormatTime(date)}</td>
+    <td>${type}</td>
+    <td>${action}</td>
+    <td class="{{if FormatNumber(amount) < 0}}negative{{else}}positive{{/if}}">
+        {{if FormatNumber(amount) < 0}}
+            -$${FormatNumber(amount) * -1}
+        {{else}}
+            $${FormatNumber(amount)}
+        {{/if}}
+    </td>
+    <td>
+        {{if FormatNumber(balance) < 0}}
+            -$${FormatNumber(balance) * -1}
+        {{else}}
+            $${FormatNumber(balance)}
+        {{/if}}
+    </td>
+  </tr>
+</script>
+{% endraw %}

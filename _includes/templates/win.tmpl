@@ -1,0 +1,20 @@
+{% raw %}
+<script id="win-template" type="text/x-jquery-tmpl">
+  <tr class="entry">
+    <td class="${style}"><h3>${number}</h3></td>
+    <td>${name}</td>
+    <td>{{if winAmount}}$${FormatNumber(winAmount)}{{/if}}</td>
+    <td>{{if placeAmount}}$${FormatNumber(placeAmount)}{{/if}}</td>
+    <td>{{if showAmount}}$${FormatNumber(showAmount)}{{/if}}</td>
+    <td>
+    {{if winAmount && placeAmount && showAmount }}
+        First
+    {{else placeAmount && showAmount}}
+        Second
+    {{else}}
+        Third
+    {{/if}}
+    </td>
+  </tr>
+</script>
+{% endraw %}

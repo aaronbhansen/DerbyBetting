@@ -1,0 +1,138 @@
+<div id="home">
+  <div class="page-header"/>
+    <h1>Bets for Race Date: <span data-type="header-date"></span>, and Event: <span data-type="race-number"></span></h1>
+  </div>
+
+  <div class="row" data-type="notification">
+  </div>
+
+  <div class="row">
+    <ul class="nav nav-tabs" id="race-tabs">
+      <li><a href="#select-player">Step 1: Select Player</a></li>
+      <li><a href="#place-bet">Step 2: Place your Bet</a></li>
+      <li><a href="#bet-history">Player Bet History</a></li>
+      <li><a href="#race-config">Race Configuration</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane" id="select-player">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Player Name</th>
+              <th>Current Balance</th>
+              <th>Total Bets</th>
+              <th>Total Winnings</th>
+              <th>ROI %</th>
+              <th>Last Winnings</th>
+              <th>Select</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane" id="place-bet">
+        <h2>Player Selected: <span data-type="selected-player"></span></h2>
+        <h3>Total Funds: <span data-type="fund-total"></span></h3>
+        <div class="winners">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <th>Number</th>
+              <th>Horse Name</th>
+              <th>$2 Win Payoff</th>
+              <th>$2 Place Payoff</th>
+              <th>$2 Show Payoff</th>
+              <th>Result</th>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <table class="horses table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Morning Odds</th>
+              <th>Current Odds</th>
+              <th>Jockey</th>
+              <th>Jockey Weight</th>
+              <th>Trainer</th>
+              <th>Bet To Win</th>
+              <th>Bet To Place</th>
+              <th>Bet To Show</th>
+              <th>Bet Cost</th>
+              <th>Possible Winning</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div class="row" data-type="bet-notification">
+        </div>
+        <button type="button" data-action="place-bet" class="btn btn-primary">Place Bets</button>
+        <div class="modal" id="bet-modal">
+          <div class="modal-header">
+            <h3>Bet Placed</h3>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Paid</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="bet-history">
+        <h2>Player Selected: <span data-type="selected-player"></span></h2>
+        <h3>Total Funds: <span data-type="fund-total"></span></h3>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Transaction Date</th>
+              <th>Transaction Time</th>
+              <th>Type</th>
+              <th>Action</th>
+              <th>Change</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane" id="race-config">
+        <form id="set-race" class="well form-inline"> 
+          <div class="control-group">
+            <label class="control-label" for="race-dates">Race Configuration:</label>
+            <div class="controls">
+              <select name="races">
+              </select>
+              <button type="button" name="refresh" class="btn">Update Horses</button>
+              <button type="button" name="auto" class="btn-success">Start Auto Refresh</button>
+            </div>
+          </div>
+        </form>
+        <form id="calculate-winnings" class="well form-inline"> 
+          <div class="control-group">
+            <span>Calculate Winnings:</span>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>  
+                  <th>Race</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>              
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<script id="add-template" type="text/x-jquery-tmpl">
+  <td>
+    <div class="control-group">
+      <input type="text" class="input-xlarge" value="${name}" placeholder="Player Name" data-type="name"/>
+      <span class="help-inline" data-type="name"></span>
+    </div>
+  </td>
+  <td>
+    <div class="control-group">
+      <input type="text" class="input-small" value="${FormatNumber(funds)}" placeholder="Funds" data-type="funds"/>
+      <span class="help-inline" data-type="funds"></span>
+    </div>  
+  </td>
+  <td>
+    <button type="button" data-action="save" class="btn btn-success">Save</button>
+    <button type="button" data-action="cancel" class="btn btn-danger">Cancel</button>
+  </td>
+</script>

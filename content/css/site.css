@@ -1,0 +1,122 @@
+body
+{
+	padding-top: 360px;
+	padding-bottom: 50px;
+	background: #FCFBF7 url('../images/derby-top-background.jpg') no-repeat center 44px;
+}
+
+.navbar .brand
+{
+	padding-top: 9px;
+}
+
+.navbar .nav > li 
+{
+	font-weight: bold;
+	line-height: 24px;
+	padding: 9px 10px 11px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	display: block;
+}
+
+.navbar .nav > li:hover
+{
+	color: white;
+	cursor: pointer;
+}
+
+.navbar .nav > li.active
+{
+	text-decoration: none;
+	background-color: transparent;
+	color: white;
+}
+
+.row 
+{
+	margin-left: 0;
+	margin-top: 15px;
+}
+
+.input-xlarge 
+{
+	width: 400px;
+}
+
+#home
+{
+	display: none;
+}
+
+#player-setup
+{
+	display: none;
+}
+
+#delete-modal, #bet-modal
+{
+	display: none;
+}
+
+#application-setup
+{
+	display: none;
+}
+
+.entry h3 {
+	font: bold 24px Arial,sans-serif;
+	line-height: 34px;
+	left: 3px;
+	top: 3px;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.negative {
+	background-color: rgb(230, 198, 198) !important;
+}
+
+.positive {
+	background-color: rgb(206, 224, 205) !important;
+}
+
+.saddle-1 h3, .pgm.saddle-1,
+.saddle-1A h3, .pgm.saddle-1A {background-color: #ff0000; color: #fff}
+.saddle-2 h3, .pgm.saddle-2 {background-color: #fff; color: #000}
+.saddle-3 h3, .pgm.saddle-3 {background-color: #000080; color: #fff}
+.saddle-4 h3, .pgm.saddle-4 {background-color: #ffff00; color: #000}
+.saddle-5 h3, .pgm.saddle-5 {background-color: #008000; color: #fff}
+
+.saddle-6 h3, .pgm.saddle-6 {background-color: #000; color: #fbdc50}
+.saddle-7 h3, .pgm.saddle-7 {background-color: #ff6600; color: #000}
+.saddle-8 h3, .pgm.saddle-8 {background-color: #ff3399; color: #000}
+.saddle-9 h3, .pgm.saddle-9 {background-color: #33cccc; color: #000}
+.saddle-10 h3, .pgm.saddle-10 {background-color: #800080; color: #fff}
+
+.saddle-11 h3, .pgm.saddle-11 {background-color: #bfbfbf; color: #ad0000}
+.saddle-12 h3, .pgm.saddle-12 {background-color: #00ff00; color: #000}
+.saddle-13 h3, .pgm.saddle-13 {background-color: #663300; color: #fff}
+.saddle-14 h3, .pgm.saddle-14 {background-color: #800000; color: #fbdc50}
+.saddle-15 h3, .pgm.saddle-15 {background-color: #b0a551; color: #000}
+
+.saddle-16 h3, .pgm.saddle-16 {background-color: #abc8e4; color: #000}
+.saddle-17 h3, .pgm.saddle-17 {background-color: #132361; color: #fff}
+.saddle-18 h3, .pgm.saddle-18 {background-color: #005a26; color: #fff}
+.saddle-19 h3, .pgm.saddle-19 {background-color: #6396ca; color: #000}
+.saddle-20 h3, .pgm.saddle-20 {background-color: #960031; color: #fff}
+
+.scratched .name, .scratched .odds, .scratched .bet {
+	font-weight: bold;
+	color: red;
+}
+
+.bet-type {
+	white-space: nowrap;
+}
